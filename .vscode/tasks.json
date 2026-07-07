@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: 编译",
+            "type": "process",
+            "command": "${workspaceFolder}/.vscode/scripts/build-c.bat",
+            "args": [
+                "${file}",
+                "${fileDirname}",
+                "${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "clear": true
+            }
+        },
+       
+    ]
+}
