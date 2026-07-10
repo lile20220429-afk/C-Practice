@@ -2,7 +2,8 @@
 
 int main()
 {
-    int n, product = 1;
+    int n;
+    long long product = 1;
     scanf("%d", &n);
     
     for(int i = 1; i <= n; i++)
@@ -10,6 +11,6 @@ int main()
         product *= i;
     }
 
-    printf("%d", product);
+    printf("%lld", product);
     return 0;
 }

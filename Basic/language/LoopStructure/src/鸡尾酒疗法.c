@@ -25,7 +25,7 @@ int main()
 
     for(int i = 1; i < n; i++)
     {
-       int y = p[i].valid *100.0 / p[i].all;
+       float y = p[i].valid *100.0 / p[i].all;
 
         if(y - x > 5) printf("better\n");
         else if(x - y > 5) printf("worse\n");

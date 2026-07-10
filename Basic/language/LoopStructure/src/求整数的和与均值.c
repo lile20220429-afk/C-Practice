@@ -4,7 +4,7 @@
 int main()
 {
     int n, sum = 0;
-    float average;
+    double average;
 
     scanf("%d", &n);
 
@@ -19,7 +19,7 @@ int main()
 
     average = 1.0 * sum / n;
 
-    printf("%d %.5f", sum, average);
+    printf("%d %.5lf", sum, average);
 
     free(p);
     return 0;
