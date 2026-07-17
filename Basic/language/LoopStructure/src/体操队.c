@@ -2,18 +2,12 @@
 
 int main()
 {
-    int k;
-    double S = 0;
-    scanf("%d", &k);
-
     for(int i = 1; ; i++)
     {
-        S += 1.0 / i;
-
-        if(S > k)
+        if(i % 2 == 1 && i % 3 == 1 && i % 4 == 1 && i % 5 == 1 && i % 6 == 1 && i % 7 == 0)
         {
             printf("%d", i);
-            break;
+            return 0;
         }
     }
     return 0;
